@@ -35,7 +35,7 @@ double* generateDoubleArray(int n) {
     return arr;
 }
 
-void showArray(int* arr, int n, string& message) {
+void showArray(int* arr, int n, const string& message) {
     cout << message;
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
@@ -43,7 +43,7 @@ void showArray(int* arr, int n, string& message) {
     cout << endl;
 }
 
-void showDoubleArray(double* arr, int n, string& message) {
+void showDoubleArray(double* arr, int n, const string& message) {
     cout << message;
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
